@@ -1,0 +1,103 @@
+.page {
+  min-height: 100vh;
+  background-color: #f0f9ff;
+  padding: 48px 24px;
+}
+
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0284c7;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #64748b;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.list {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.label {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.paid {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.pending {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.unpaid {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.actions {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.edit {
+  background-color: #ffedd5;
+  color: #9a3412;
+}
+
+.back {
+  background-color: #e5e7eb;
+  color: #374151;
+}

@@ -1,0 +1,92 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 18px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);   /* lebih soft */
+  backdrop-filter: blur(12px);             /* blur lebih smooth */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  z-index: 999;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.navabout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 18px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(1, 187, 208, 0.87);   /* lebih soft */
+  backdrop-filter: blur(12px);             /* blur lebih smooth */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  z-index: 999;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+  transform: scale(1.03);
+}
+
+.navLinks {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.navLinks li {
+  position: relative;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.navLinks li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #ffd700;
+  transition: width 0.25s ease;
+}
+
+.navLinks li:hover::after {
+  width: 100%;
+}
+
+.navLinks li:hover {
+  color: #ffd700;
+}

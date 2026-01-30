@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "singularName": "booking",
+    "pluralName": "bookings",
+    "displayName": "BOOKING"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer_name": {
+      "type": "string",
+      "required": true
+    },
+    "booking_code": {
+      "type": "uid",
+      "targetField": "customer_name",
+      "required": true
+    },
+    "customer_email": {
+      "type": "string",
+      "required": true
+    },
+    "total_price": {
+      "type": "decimal",
+      "required": true
+    },
+    "status_trx": {
+      "type": "enumeration",
+      "default": "pending",
+      "enum": [
+        "pending",
+        "paid",
+        "cancel"
+      ]
+    },
+    "booking_date": {
+      "type": "date"
+    },
+    "travel_package": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::travel-package.travel-package",
+      "inversedBy": "bookings"
+    }
+  }
+}
